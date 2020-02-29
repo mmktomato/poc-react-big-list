@@ -1,0 +1,19 @@
+{
+  "name": "poc-react-big-list",
+  "version": "1.0.0",
+  "description": "PoC: React rendering delay on a list with many items",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel serve src/index.html"
+  },
+  "author": "mmktomato",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-window": "^1.8.5"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
