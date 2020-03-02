@@ -18,9 +18,9 @@ export const List2 = ({ initialItems }) => {
   // NOTE: The `FixedSizeList` from `react-window` removes components that are not displayed on the screen.
   //       Note that you can't find the element by "Ctrl-F" search.
   return (
-    <div>
+    <div style={{ margin: "0 50px" }}>
       <p>{"List2 (react-window)"}</p>
-      <p>Selected items count: {items.filter(item => item.selected).length}</p>
+      <div>Selected items count: {items.filter(item => item.selected).length}</div>
       <FixedSizeList
         height={400}
         width="100%"

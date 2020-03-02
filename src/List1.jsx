@@ -15,9 +15,9 @@ export const List1 = ({ initialItems }) => {
   const [items, setSelected] = useList1(initialItems);
 
   return (
-    <div>
+    <div style={{ margin: "0 50px" }}>
       <p>List1</p>
-      <p>Selected items count: {items.filter(item => item.selected).length}</p>
+      <div>Selected items count: {items.filter(item => item.selected).length}</div>
       <ul
         style={{
           height: "400px",
