@@ -6,6 +6,12 @@ const useList3 = initialItems => {
   const setSelected = React.useCallback((id, selected) => {
     const updateItems = prevItems => prevItems.map(item => item.id === id ? { ...item, selected } : item);
     setItems(updateItems);
+
+    // NOTE: Don't refer `items` directly like below if you use `useCallback`.
+    //       It causes "Selected items count" doesn't increase.
+    //       Because this arrow function captures initial `items` in the scope.
+    // const _items = items.map(item => item.id === id ? { ...item, selected } : item);
+    // setItems(_items);
   }, []);
 
   return [items, setSelected];
